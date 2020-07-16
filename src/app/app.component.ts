@@ -88,7 +88,7 @@ export class AppComponent {
       name: this.fb.control('', Validators.required),
       email: this.fb.control('', [Validators.required, Validators.email]),
       password: this.fb.control('', Validators.required),
-      confirmPassword: this.fb.control('', Validators.required),
+      confirm_password: this.fb.control('', Validators.required),
       address: this.fb.array([this.fb.group({
         country: this.fb.control('', Validators.required),
         state: this.fb.control('', Validators.required),
@@ -98,7 +98,7 @@ export class AppComponent {
         zipCode: this.fb.control('', Validators.required)
       })]),
       gender: this.fb.control('', Validators.required),
-      maritalStatus: this.fb.control('', Validators.required),
+      marital_status: this.fb.control('', Validators.required),
       favFood: this.fb.control('', Validators.required),
       favColor: this.fb.control('', Validators.required),
 
